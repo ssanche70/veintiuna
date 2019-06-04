@@ -103,7 +103,7 @@ def pedir():
     elif total(dealer) == 21:
         dealergana()
 
-    # debug()
+
 
 
 def otra():
@@ -154,28 +154,24 @@ dealer_sello = [0] * 6
 jugador_sello = [0] * 6
 
 for carta in range(6):
-    # Create labels for dealer
+
     dealer_sello[carta] = Sello_Carta(root)
     dealer_sello[carta].grid(row=0, column=carta, padx=10, pady=10)
     dealer_sello[carta].display('blank')
 
-    # Create labels for player
+
     jugador_sello[carta] = Sello_Carta(root)
     jugador_sello[carta].grid(row=1, column=carta, padx=10, pady=10)
     jugador_sello[carta].display('blank')
 
-###############################################################################################################
 
-# Score update label
 dealer_gana = Label(root, text='Dealer\'s score:  ')
 dealer_gana.grid(row=0, column=6, sticky=W, padx=20, pady=10)
 
 jugador_gana = Label(root, text='Player\'s score:  ')
 jugador_gana.grid(row=1, column=6, sticky=W, padx=20, pady=10)
 
-###############################################################################################################
 
-# Control buttons
 boton_repartir = Button(root, text='Repartir', command=pedir)
 boton_repartir.grid(row=2, column=0, columnspan=2, pady=10)
 
@@ -185,9 +181,7 @@ boton_pedir.grid(row=2, column=2, columnspan=2, pady=10)
 boton_pasar = Button(root, text='Pasar', state='disabled', command=pasar_carta)
 boton_pasar.grid(row=2, column=4, columnspan=2, pady=10)
 
-###############################################################################################################
 
-# Note the grid is part of the parent
 root.rowconfigure(0, minsize=115)
 root.columnconfigure(0, minsize=85)
 
