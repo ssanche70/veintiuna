@@ -1,10 +1,4 @@
-"""
-Deck.py: Assignment 2.2, CIS 211
-Author: Momo Ozawa
 
-This program contains the definitions for a class Deck that represents a deck of playing cards, and
-a class PinochleDeck that inherits methods from Card.
-"""
 from Carta import *
 from random import shuffle
 
